@@ -1,8 +1,6 @@
 ---
 title: "About this website"
-output: 
-  html_document:
-    theme: cerulean
+output: html_document
 ---
 
 This website was coded by Kimia Faroughi using RMarkdown to do all the hard work.

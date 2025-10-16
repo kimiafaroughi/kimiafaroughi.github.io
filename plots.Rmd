@@ -1,8 +1,6 @@
 ---
 title: "Here are some plots"
-output: 
-  html_document:
-    theme: cerulean
+output: html_document
 ---
 
 We often make plots in data science.
