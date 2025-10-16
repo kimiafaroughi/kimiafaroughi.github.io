@@ -1,0 +1,35 @@
+---
+title: "Here are some plots"
+output: 
+  html_document:
+    theme: cerulean
+---
+
+We often make plots in data science.
+
+Here's the tidyverse.
+
+```{r, message = FALSE}
+library(tidyverse)
+```
+
+Here's a dataframe.
+
+```{r}
+plot_df = 
+  tibble(
+    x = rnorm(100, mean = 1, sd = 2),
+    y = 1 + 2 * x +rnorm(100)
+  )
+```
+
+Here's a plot.
+
+```{r}
+plot_df |> 
+  ggplot(aes(x = x , y = y)) +
+  geom_point()
+  
+```
+
+Go back to the [homepage](index.html).

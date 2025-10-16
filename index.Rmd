@@ -1,0 +1,27 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Jeff's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+You can do everything you might usually do. 
+
+That means you can add text. 
+
+This website is an example coming from [P8105](https://p8105.com/index.html). 
+We're making websites today! Learn more about this site [here](about.html).
+
+I also use [google](https://www.google.com/) a ton for data science. 
+
+To show that you can use RMD like normal, check out [this page](plots.html) with plots.
+
+
+Here's a picture of one of my favorite movies:
+
+![](images/kiki.webp)

@@ -1,0 +1,10 @@
+---
+title: "About this website"
+output: 
+  html_document:
+    theme: cerulean
+---
+
+This website was coded by Kimia Faroughi using RMarkdown to do all the hard work.
+
+Go back to the [homepage](index.html).
