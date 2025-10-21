@@ -3,7 +3,7 @@ title: "plotly"
 output: html_document
 ---
 
-```{r setup, message = FALSE}
+```{r, message = FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
