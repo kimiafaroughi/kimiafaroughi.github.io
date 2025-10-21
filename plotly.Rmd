@@ -45,3 +45,28 @@ nyc_airbnb |>
   )
 ```
 
+Let's make a boxplot
+
+```{r}
+nyc_airbnb |> 
+  mutate(
+    neighbourhood = fct_reorder(neighbourhood, price)
+  ) |> 
+  plot_ly(
+    x = ~neighbourhood, y = ~price, color = ~neighbourhood,
+    type = "box", colors = "viridis"
+  )
+```
+
+Barcharts
+
+```{r}
+nyc_airbnb |> 
+  count(neighbourhood) |> 
+  mutate(
+    neighbourhood = fct_reorder(neighbourhood, n)
+  ) |> 
+  plot_ly(x = ~neighbourhood, y = ~n,
+        type = "bar")
+```
+
