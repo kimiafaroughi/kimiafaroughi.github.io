@@ -1,15 +1,22 @@
 ---
-title: "plotly"
-output: html_document
+title: "Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-```{r setup, message = FALSE}
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
 
-Let's load the AirBnB dataset
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
 
 ```{r}
 data("nyc_airbnb")
@@ -29,11 +36,7 @@ nyc_airbnb =
     price <= 500,
     price >= 100
   )
-```
 
-Let's make a scatterplot but interactive this time
-
-```{r}
 nyc_airbnb |> 
   mutate(
     label = str_c("Price : $", price, "\nRating: ", rating) #\n means new line
@@ -45,7 +48,10 @@ nyc_airbnb |>
   )
 ```
 
-Let's make a boxplot
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 nyc_airbnb |> 
@@ -58,7 +64,7 @@ nyc_airbnb |>
   )
 ```
 
-Barcharts
+### Chart C
 
 ```{r}
 nyc_airbnb |> 
@@ -69,16 +75,3 @@ nyc_airbnb |>
   plot_ly(x = ~neighbourhood, y = ~n,
         type = "bar")
 ```
-
-## ggplotly
-
-```{r}
-ggp_scatterplot =
-  nyc_airbnb |> 
-  ggplot(aes(x = lat, y = long, color = price)) +
-  geom_point()
-
-ggplotly(ggp_scatterplot) #not as good as plot_ly, but if you need something for yourself really quickly
-```
-
-**code for dashboard `r rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")`**
