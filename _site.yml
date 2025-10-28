@@ -1,0 +1,16 @@
+name: "Site YML"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<ksf2129@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/kimiafaroughi/
+    - icon: fa-brands fa-linkedin fa-lg
+      href: www.linkedin.com/in/kimia-faroughi-9851411b3
+output:
+  html_document:
+    theme: cerulean

@@ -1,0 +1,13 @@
+---
+title: "Kimia's Webiste!"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Welcome!
+
+My name is Kimia Faroughi and I am a second year MPH student at Columbia University's Mailman School of Public Health!
+
+This website is my assignment for Homework 4 in P8105, as well as an opportunity to showcase my work and experiences.

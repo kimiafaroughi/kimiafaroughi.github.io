@@ -1,0 +1,8 @@
+---
+title: "About This Website"
+output: html_document
+---
+
+This website was coded by Kimia Faroughi using RMarkdown to do all the hard work.
+
+Go back to the [homepage](index.html).
