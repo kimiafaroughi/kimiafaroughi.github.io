@@ -10,7 +10,7 @@ navbar:
     - icon: fa-github fa-lg
       href: http://github.com/kimiafaroughi/
     - icon: fa-brands fa-linkedin fa-lg
-      href: www.linkedin.com/in/kimia-faroughi-9851411b3
+      href: https://www.linkedin.com/in/kimia-faroughi-9851411b3/
 output:
   html_document:
     theme: cerulean

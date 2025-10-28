@@ -1,5 +1,5 @@
 ---
-title: "Kimia's Webiste!"
+title: "Kimia's Website!"
 output: 
   html_document:
     toc: true
@@ -8,6 +8,6 @@ output:
 
 # Welcome!
 
-My name is Kimia Faroughi and I am a second year MPH student at Columbia University's Mailman School of Public Health!
+My name is **Kimia Faroughi** and I am a second year MPH student at Columbia University's Mailman School of Public Health! I am in the **epidemiology** department with a certificate in **applied biostatistics and public health data science**. 
 
 This website is my assignment for Homework 4 in P8105, as well as an opportunity to showcase my work and experiences.
