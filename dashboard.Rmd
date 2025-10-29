@@ -1,0 +1,73 @@
+---
+title: "Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: simplex
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Random Sample of 1000 Restaurant Scores by Date of Inspection by Borough
+
+```{r}
+data("rest_inspec")
+
+rest_inspec = 
+  rest_inspec |> 
+  #narrowing dataset eventually helps with making loading online easier
+  select(
+    camis, boro, cuisine_description, critical_flag, score, grade, inspection_date
+  ) |> 
+  filter(boro != 0, score >= 0, grade != "N")
+
+rest_inspec |> 
+  sample_n(1000) |> 
+  plot_ly(x = ~inspection_date, y = ~score, color = ~boro, type = "scatter", mode = "markers") |> 
+  layout(
+    xaxis = list(title = "Inspection Date"),
+    yaxis = list(title = "Score")
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Random Sample of 1000 Restaurant Scores by Borough
+
+```{r}
+rest_inspec |> 
+  drop_na(score) |>
+  sample_n(1000) |> 
+  plot_ly(x = ~boro, y = ~score, color = ~boro, type = "box") |> 
+  layout(
+    xaxis = list(title = "Borough"),
+    yaxis = list(title = "Score")
+  )
+```
+
+### Number of Restaurants by Grade in Random Sample of 1000 Restaurants
+
+```{r}
+rest_inspec |> 
+  drop_na(grade) |> 
+  sample_n(1000) |> 
+  count(grade) |> 
+  mutate(
+    grade = fct_reorder(grade, n)
+  ) |> 
+  plot_ly(x = ~grade, y = ~n, type = "bar") |> 
+  layout(
+    xaxis = list(title = "Grade"),
+    yaxis = list(title = "Number of Restaurants")
+  )
+```
