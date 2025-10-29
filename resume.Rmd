@@ -5,6 +5,8 @@ output: html_document
 
 Check out my resume, detailing my academic and professional experiences, below:
 
-![](attachments/resume.pdf)
+![](attachments/resume_pg_1.png)
+
+![](attachments/resume_pg_2.png)
 
 Go back to the [homepage](index.html).
