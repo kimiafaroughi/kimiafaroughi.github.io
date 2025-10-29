@@ -15,4 +15,4 @@ navbar:
       href: https://www.linkedin.com/in/kimia-faroughi-9851411b3/
 output:
   html_document:
-    theme: cerulean
+    theme: simplex
