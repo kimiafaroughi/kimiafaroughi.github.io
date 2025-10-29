@@ -3,7 +3,7 @@ title: "Academic and Professional Experience"
 output: html_document
 ---
 
-Check out my resume, detailing my academic and professional experience, below:
+Check out my resume, detailing my academic and professional experiences, below:
 
 ![](attachments/resume.pdf)
 
