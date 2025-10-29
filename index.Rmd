@@ -11,3 +11,5 @@ output:
 My name is **Kimia Faroughi** and I am a second year MPH student at Columbia University's Mailman School of Public Health! I am in the **epidemiology** department with a certificate in **applied biostatistics and public health data science**. 
 
 This website is my assignment for Homework 4 in P8105, as well as an opportunity to showcase my work and experiences.
+
+To check out my resume, visit [this page](resume.html), or via the resume tab in the top right. 

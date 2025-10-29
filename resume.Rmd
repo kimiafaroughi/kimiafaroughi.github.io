@@ -1,0 +1,10 @@
+---
+title: "Academic and Professional Experience"
+output: html_document
+---
+
+Check out my resume, detailing my academic and professional experience, below:
+
+![](attachments/resume.pdf)
+
+Go back to the [homepage](index.html).
