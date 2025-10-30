@@ -5,6 +5,8 @@ output:
     orientation: columns
     vertical_layout: fill
     theme: simplex
+    navbar:
+      - { title: "Home", href: "index.html" }
 ---
 
 ```{r setup, include=FALSE}
